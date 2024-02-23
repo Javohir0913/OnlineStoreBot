@@ -72,6 +72,7 @@ def sahifa() -> InlineKeyboardMarkup:
         InlineKeyboardButton(text="⬅️", callback_data="-1"),
         InlineKeyboardButton(text="➡️", callback_data="1")
     ]
-    rows = [row]
+    row1 = [InlineKeyboardButton(text="Cancel", callback_data="cancel")]
+    rows = [row, row1]
     markup = InlineKeyboardMarkup(inline_keyboard=rows)
     return markup

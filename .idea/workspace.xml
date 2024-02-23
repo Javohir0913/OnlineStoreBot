@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1e411e-686d-47ba-a020-775bda4b3961" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lesson_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lesson_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/admin_msg_handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/commands_handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/store.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/admin_inline_keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/admin_inline_keyboards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/admin_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/admin_states.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/client_ads_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/client_ads_handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/client_inline_keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/client_inline_keyboards.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/store.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Online store bot.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.online store bot.executor": "Run",
     "Python.reg_states.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -60,7 +53,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="online store bot" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="online store bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lesson_2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,13 +62,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (lesson_1)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="main.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="main.py" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -83,6 +75,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.online store bot" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

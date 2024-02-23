@@ -116,7 +116,7 @@ async def ads_list_handler(message: Message, state: FSMContext):
     if db.elon_bormi(message.from_user.id)[0] != 0:
         my_ads = db.get_my_ads(message.from_user.id)
         my_ads_list = []
-        await state.update_data(count=1)
+        await state.update_data(count=0)
         await state.update_data(user_id=message.from_user.id)
         for ad in my_ads:
             my_ads_list.append(ad)
@@ -137,25 +137,29 @@ async def ads_handler(callback: CallbackQuery, state: FSMContext):
     my_ads_list = []
     for ad in my_ads:
         my_ads_list.append(ad)
-    if callback.data != "-1" and zxc >= 0:
+    if callback.data == "cancel":
+        await callback.message.delete()
+        await state.clear()
+    elif callback.data == "1" and zxc >= 0:
         await state.update_data(count=zxc + int(callback.data))
+        zxc = zxc + int(callback.data)
         await callback.message.answer_photo(photo=my_ads_list[zxc][4],
                                    caption=f"<b> {my_ads_list[zxc][1]}</b>\n\n{my_ads_list[zxc][2]}\n\nPrice: ${my_ads_list[zxc][3]}",
                                    parse_mode=ParseMode.HTML, reply_markup=sahifa())
+        await callback.message.delete()
     elif zxc > 0 and callback.data == "-1":
         await state.update_data(count=zxc + int(callback.data))
+        zxc = zxc + int(callback.data)
         await callback.message.answer_photo(photo=my_ads_list[zxc][4],
                                             caption=f"<b> {my_ads_list[zxc][1]}</b>\n\n{my_ads_list[zxc][2]}\n\nPrice: ${my_ads_list[zxc][3]}",
                                             parse_mode=ParseMode.HTML, reply_markup=sahifa())
-    else:
-        print("zxc")
-    print(zxc)
+        await callback.message.delete()
 
 
 @ads_router.message(Command("del_ad"))
 async def start_del_handler(message: Message, state: FSMContext):
     await state.clear()
-    await message.answer(text="Qaysi eloni o'chirmoqchisz", reply_markup=ads_list(message.from_user.id))
+    await message.answer(text="Qaysi eloni o'chirmoqchisz?", reply_markup=ads_list(message.from_user.id))
     await state.set_state(ClientDelAdsStates.delState)
 
 
