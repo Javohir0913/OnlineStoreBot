@@ -7,6 +7,7 @@ from aiogram.client.default import DefaultBotProperties
 from config import BOT_TOKEN
 from handlers.admin_category_handlers import category_router
 from handlers.client_ads_handlers import ads_router
+from handlers.msg_handlers import msg_router
 from handlers.reg_handlers import reg_router
 
 
@@ -21,7 +22,7 @@ async def main():
     dp = Dispatcher()
     dp.include_routers(
         reg_router, category_router,
-        ads_router
+        ads_router, msg_router
     )
     await dp.start_polling(bot)
 

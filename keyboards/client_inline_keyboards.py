@@ -76,3 +76,56 @@ def sahifa() -> InlineKeyboardMarkup:
     rows = [row, row1]
     markup = InlineKeyboardMarkup(inline_keyboard=rows)
     return markup
+
+
+def show_ads(ads_count, ads) -> InlineKeyboardMarkup:
+    row = []
+    row1 = []
+    for i in range(1, ads_count + 1):
+        if i < 6:
+            row.append(InlineKeyboardButton(text=str(i), callback_datastr=str(ads[i-1][0])))
+        else:
+            row1.append(InlineKeyboardButton(text=str(i), callback_datastr=str(ads[i-1][0])))
+
+    row2 = [
+        InlineKeyboardButton(text='Cancel', callback_data="cancel")
+    ]
+    rows = [row, row1, row2]
+    markup = InlineKeyboardMarkup(inline_keyboard=rows)
+    return markup
+
+
+def show_ads_l_r(ads_count, ads) -> InlineKeyboardMarkup:
+    row = []
+    row1 = []
+    for i in range(1, ads_count + 1):
+        if i < 6:
+            row.append(InlineKeyboardButton(text=str(i), callback_data=str(ads[i - 1][0])))
+        else:
+            row1.append(InlineKeyboardButton(text=str(i), callback_data=str(ads[i - 1][0])))
+
+    row2 = [
+        InlineKeyboardButton(text='️️️️️️⬅️', callback_data="left"),
+        InlineKeyboardButton(text='Cancel', callback_data="cancel"),
+        InlineKeyboardButton(text="➡️", callback_data="right")
+    ]
+    rows = [row, row1, row2]
+    markup = InlineKeyboardMarkup(inline_keyboard=rows)
+    return markup
+
+
+def msg_shou(ads_count, ads) -> InlineKeyboardMarkup:
+    row = []
+    row1 = []
+    for i in range(1, ads_count + 1):
+        if i < 6:
+            row.append(InlineKeyboardButton(text=str(i), callback_data=str(ads[i - 1][0])))
+        else:
+            row1.append(InlineKeyboardButton(text=str(i), callback_data=str(ads[i - 1][0])))
+
+    row2 = [
+        InlineKeyboardButton(text='Cancel', callback_data="cancel")
+    ]
+    rows = [row, row1, row2]
+    markup = InlineKeyboardMarkup(inline_keyboard=rows)
+    return markup

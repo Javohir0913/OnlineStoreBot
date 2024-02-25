@@ -69,6 +69,10 @@ commands_user = [
         description='Start/restart bot'
     ),
     BotCommand(
+        command='all_ads',
+        description='barcha elonlar'
+    ),
+    BotCommand(
         command='help',
         description='???'
     ),

@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1e411e-686d-47ba-a020-775bda4b3961" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lesson_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson_2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/msg_handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/client_ads_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/client_ads_handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keyboards/client_inline_keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/client_inline_keyboards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/client_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/client_states.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/store.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/my_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +44,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Online store bot.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.online store bot.executor": "Run",
-    "Python.reg_states.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Online store bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.msg_handlers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.online store bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reg_states.executor&quot;: &quot;Run&quot;,
+    &quot;Python.uy ishi pdf_jpg_multi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Python.online store bot">
     <configuration name="online store bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lesson_2" />
       <option name="ENV_FILES" value="" />
@@ -75,9 +80,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="uy ishi pdf_jpg_multi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../5-oy/lesson_7" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../5-oy/lesson_7/uy ishi pdf_jpg_multi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.online store bot" />
+        <item itemvalue="Python.uy ishi pdf_jpg_multi" />
       </list>
     </recent_temporary>
   </component>
@@ -98,5 +126,16 @@
       <updated>1708588406977</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

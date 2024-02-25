@@ -115,16 +115,17 @@ class Database:
             f"SELECT id, ad_title, ad_text, ad_price, ad_images FROM ads WHERE ad_owner=?;",
             (u_id,)
         )
-        return ads
+        return ads.fetchall()
 
-    def elon_bormi(self, u_id):
+    def all_ads(self):
+        ads = self.cursor.execute("SELECT * FROM ads")
+        return ads.fetchall()
+
+    def get_ads(self, ads_id):
         ads = self.cursor.execute(
-            f"SELECT count(id) FROM ads WHERE ad_owner=?;",
-            (u_id,)).fetchone()
-        if ads:
-            return ads
-        else:
-            return False
+            f"SELECT * FROM ads WHERE id=?;",
+            (ads_id,)).fetchone()
+        return ads
 
     def get_user(self, u_id):
         user = self.cursor.execute(f"SELECT * FROM users WHERE tg_id=?;", (u_id,))
@@ -178,3 +179,12 @@ class Database:
             return True
         except:
             return False
+
+    def search(self, text):
+        try:
+            x = self.cursor.execute("SELECT * FROM ads AS a JOIN products AS p ON a.ad_product == p.id WHERE p.product_name LIKE ?;",
+                                    (f"%{text}%",)).fetchall()
+
+            return x
+        except:
+            return []

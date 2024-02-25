@@ -24,3 +24,11 @@ class ClientEditStates(StatesGroup):
 
 class AdsStates(StatesGroup):
     clientAds = State()
+
+
+class AllAds(StatesGroup):
+    all_ads = State()
+
+
+class MsgAllAds(StatesGroup):
+    msgAds = State()
